@@ -11,6 +11,13 @@
 		3DCDA61A2CF3190200BC780B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA6192CF3190200BC780B /* Transaction.swift */; };
 		3DCDA61C2CF3195400BC780B /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA61B2CF3195400BC780B /* TransactionType.swift */; };
 		3DCDA61E2CF319DD00BC780B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA61D2CF319DD00BC780B /* Category.swift */; };
+		3DCDA6212D0C51CF00BC780B /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA6202D0C51CF00BC780B /* AddExpenseView.swift */; };
+		3DCDA6232D0C520000BC780B /* AddExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA6222D0C520000BC780B /* AddExpenseViewModel.swift */; };
+		3DCDA6252D0C521600BC780B /* ExpenseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA6242D0C521600BC780B /* ExpenseRepository.swift */; };
+		3DCDA6382D0C56BC00BC780B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA6372D0C56BC00BC780B /* Expense.swift */; };
+		3DCDA63A2D0C5BFC00BC780B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA6392D0C5BFC00BC780B /* HistoryViewModel.swift */; };
+		3DCDA63C2D0C5E3D00BC780B /* AddExpenseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA63B2D0C5E3D00BC780B /* AddExpenseViewModelTests.swift */; };
+		3DCDA63E2D0C5E5100BC780B /* ExpenseRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDA63D2D0C5E5100BC780B /* ExpenseRepositoryMock.swift */; };
 		3DE783A12CE83D5900CA2D30 /* myFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE783A02CE83D5900CA2D30 /* myFinanceApp.swift */; };
 		3DE783A32CE83D5900CA2D30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE783A22CE83D5900CA2D30 /* ContentView.swift */; };
 		3DE783A52CE83D5900CA2D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE783A42CE83D5900CA2D30 /* Assets.xcassets */; };
@@ -46,6 +53,13 @@
 		3DCDA6192CF3190200BC780B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		3DCDA61B2CF3195400BC780B /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		3DCDA61D2CF319DD00BC780B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3DCDA6202D0C51CF00BC780B /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		3DCDA6222D0C520000BC780B /* AddExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewModel.swift; sourceTree = "<group>"; };
+		3DCDA6242D0C521600BC780B /* ExpenseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRepository.swift; sourceTree = "<group>"; };
+		3DCDA6372D0C56BC00BC780B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		3DCDA6392D0C5BFC00BC780B /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		3DCDA63B2D0C5E3D00BC780B /* AddExpenseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewModelTests.swift; sourceTree = "<group>"; };
+		3DCDA63D2D0C5E5100BC780B /* ExpenseRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRepositoryMock.swift; sourceTree = "<group>"; };
 		3DE7839D2CE83D5900CA2D30 /* myFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE783A02CE83D5900CA2D30 /* myFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFinanceApp.swift; sourceTree = "<group>"; };
 		3DE783A22CE83D5900CA2D30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3DE783D02CE8441800CA2D30 /* History.swift */,
+				3DCDA6392D0C5BFC00BC780B /* HistoryViewModel.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -115,11 +130,22 @@
 		3DCDA6182CF318F200BC780B /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				3DCDA6242D0C521600BC780B /* ExpenseRepository.swift */,
+				3DCDA6372D0C56BC00BC780B /* Expense.swift */,
 				3DCDA6192CF3190200BC780B /* Transaction.swift */,
 				3DCDA61B2CF3195400BC780B /* TransactionType.swift */,
 				3DCDA61D2CF319DD00BC780B /* Category.swift */,
 			);
 			path = Repo;
+			sourceTree = "<group>";
+		};
+		3DCDA61F2D0C51A900BC780B /* ExpenseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3DCDA6202D0C51CF00BC780B /* AddExpenseView.swift */,
+				3DCDA6222D0C520000BC780B /* AddExpenseViewModel.swift */,
+			);
+			path = ExpenseDetail;
 			sourceTree = "<group>";
 		};
 		3DE783942CE83D5900CA2D30 = {
@@ -145,6 +171,7 @@
 		3DE7839F2CE83D5900CA2D30 /* myFinance */ = {
 			isa = PBXGroup;
 			children = (
+				3DCDA61F2D0C51A900BC780B /* ExpenseDetail */,
 				3DCDA6182CF318F200BC780B /* Repo */,
 				3DCDA6172CF318B400BC780B /* Expense */,
 				3DCDA6162CF318A000BC780B /* History */,
@@ -170,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				3DE783B12CE83D5900CA2D30 /* myFinanceTests.swift */,
+				3DCDA63B2D0C5E3D00BC780B /* AddExpenseViewModelTests.swift */,
+				3DCDA63D2D0C5E5100BC780B /* ExpenseRepositoryMock.swift */,
 			);
 			path = myFinanceTests;
 			sourceTree = "<group>";
@@ -321,12 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCDA6382D0C56BC00BC780B /* Expense.swift in Sources */,
+				3DCDA6252D0C521600BC780B /* ExpenseRepository.swift in Sources */,
 				3DE783CD2CE83FB600CA2D30 /* HomeView.swift in Sources */,
+				3DCDA6232D0C520000BC780B /* AddExpenseViewModel.swift in Sources */,
 				3DCDA61E2CF319DD00BC780B /* Category.swift in Sources */,
+				3DCDA6212D0C51CF00BC780B /* AddExpenseView.swift in Sources */,
 				3DCDA61C2CF3195400BC780B /* TransactionType.swift in Sources */,
 				3DE783CF2CE8424C00CA2D30 /* ExpensePatterns.swift in Sources */,
 				3DCDA61A2CF3190200BC780B /* Transaction.swift in Sources */,
 				3DE783A32CE83D5900CA2D30 /* ContentView.swift in Sources */,
+				3DCDA63A2D0C5BFC00BC780B /* HistoryViewModel.swift in Sources */,
 				3DCDA6142CF3182D00BC780B /* ExpensePatternsViewModel.swift in Sources */,
 				3DE783A12CE83D5900CA2D30 /* myFinanceApp.swift in Sources */,
 				3DE783D52CE991C100CA2D30 /* KMeansClassifier.mlmodel in Sources */,
@@ -339,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE783B22CE83D5900CA2D30 /* myFinanceTests.swift in Sources */,
+				3DCDA63C2D0C5E3D00BC780B /* AddExpenseViewModelTests.swift in Sources */,
+				3DCDA63E2D0C5E5100BC780B /* ExpenseRepositoryMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
